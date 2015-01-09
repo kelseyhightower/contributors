@@ -31,3 +31,11 @@ docker build -t kelseyhightower/contributors .
 ```
 docker run -d -P kelseyhightower/contributors
 ```
+
+## Testing with curl
+
+```
+curl --data "repo=docker&owner=docker" http://localhost:49153
+```
+
+Replace port 49153 with port from docker ps
